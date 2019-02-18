@@ -8,23 +8,24 @@
     <script type="text/javascript" src="src/generator.js"></script>
   </head>
   <body>
+      <div class="title">Arkham Horror Chaos Token Generator</div>
+      <br>
     <main class="wrapper">
-      <div class="cointainer" style="filter: contrast(300%) brightness(10%);s" id="cointainer" onclick="this.style.animation = 'slit-in-horizontal 1s ease-in both'; generateToken();" onmousedown="this.removeAttribute('style');">
+      <div class="cointainer" style="filter: contrast(300%) brightness(10%);" id="cointainer" onclick="this.style.animation = 'slit-in-horizontal 1s ease-in both'; generateToken();" onmousedown="this.removeAttribute('style');">
         <img class="backgroundImg" src="src/sign.png">
         <div class="centered">
           <div id="token"></div>
         </div>
       </div>
       <br>
-        <div style="background-color: white; opacity: 0.8; border-radius: 1vw; padding: 2vw 2vw 0vw 2vw; width: 80%; margin-left: 1vw; margin-right: 1vw; display: inline-block; align-self: baseline;">
+        <div class="diff">
         <form>
-        <label>Select a difficulty setting:</label>
-        <br>
+        <span>Choose your path:</span><br>
           <select id="difficulty">
-            <option value="0" selected>Easy</option>
-            <option value="1">Normal</option>
-            <option value="2">Hard</option>
-            <option value="3">Arkham horror</option>
+            <option value="0" selected>Arkham</option>
+            <option value="1">Dunwich</option>
+            <option value="2">R'lyeh</option>
+            <option value="3">Yuggoth</option>
           </select>
         </form>
         <br>
