@@ -4,8 +4,6 @@ var difficultyArray = [["+1 ", "+1 ", "0", "0", "0", "-1 ", "-1 ", "-1 ", "-2 ",
 ["0", "-1 ", "-1 ", "-2 ", "-2 ", "-3 ", "-3 ", "-4 ", "-4 ", "-5 ", "-6 ", "-8 ", "k", "k", "l", "q", "m", "o"]];
 var token;
 var historyArray = [];
-			
-			
 function generateToken()
 {
 	var formValue = document.getElementById("difficulty");

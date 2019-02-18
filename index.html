@@ -1,35 +1,57 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Arkham Horror LCG Chaos Token generator</title>
     <link rel="icon" href="src/icon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script type="text/javascript" src="src/generator.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
-  <body>
-      <div class="title">Arkham Horror Chaos Token Generator</div>
-      <br>
-    <main class="wrapper">
-      <div class="cointainer" style="filter: contrast(300%) brightness(10%);" id="cointainer" onclick="this.style.animation = 'slit-in-horizontal 1s ease-in both'; generateToken();" onmousedown="this.removeAttribute('style');">
-        <img class="backgroundImg" src="src/sign.png">
-        <div class="centered">
-          <div id="token"></div>
-        </div>
+  <body  style="background-color: #000800;">
+      <div class="row">
+        <div class="title">Arkham Horror Chaos Token Generator</div>
       </div>
-      <br>
-        <div class="diff">
-        <form>
-        <span>Choose your path:</span><br>
-          <select id="difficulty">
-            <option value="0" selected>Arkham</option>
-            <option value="1">Dunwich</option>
-            <option value="2">R'lyeh</option>
-            <option value="3">Yuggoth</option>
-          </select>
-        </form>
-        <br>
+
+      <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-10">
+          <div class="background">
+
+            <div class="stub"></div>
+            <div class="stub"></div>
+
+            <div class="cointainer" style="filter: contrast(300%) brightness(10%);" id="cointainer" onclick="this.style.animation = 'slit-in-horizontal 1s ease-in both'; generateToken();" onmousedown="this.removeAttribute('style');">
+              <img class="backgroundImg" src="src/sign.png">
+              <div class="centered">
+                <div id="token"></div>
+              </div>
+            </div>
+
+            <div class="stub"></div>
+            <div class="stub"></div>
+
+            <div class="diff">
+              <form>
+              <span>Choose your path:</span><br>
+                <select id="difficulty">
+                  <option value="0" selected>Arkham</option>
+                  <option value="1">Dunwich</option>
+                  <option value="2">R'lyeh</option>
+                  <option value="3">Yuggoth</option>
+                </select>
+              </form>
+              <br>
+            </div>
+
+          </div>
         </div>
-    </main>
+
+        <div class="col-sm-1"></div>
+
+      </div>
   </body>
 </html>
