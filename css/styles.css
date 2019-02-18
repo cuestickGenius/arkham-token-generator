@@ -1,13 +1,13 @@
 body
 {
-	background-color:			#111111;
+	background-color:			#000900;
 }
 
 .background
 {
 	height: 85vh;
 	box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.3);
-	border-radius: 15vh;
+	border-radius: 10vh;
 	background-image:			url("../src/background.png");
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body
 .backgroundImg {
 	margin-left: auto;
 	margin-right: auto;
-	height: 40vh;
+	height: 35vh;
 	border: 1vh solid #e8b46a;
 	padding: 2vh;
 	border-radius: 100%;
@@ -48,7 +48,19 @@ body
 	transform: translate(-50%, -50%);
 }
 
-
+.history
+{
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  opacity: 0.8;
+  flex-wrap: wrap;
+  height: 9vmin;
+  overflow: hidden;
+  padding-left: 0.5vw;
+  padding-top: 0.5vw;
+  border-radius: 1vw;
+}
 
 .title {
 	align-self: center;
@@ -109,42 +121,42 @@ select {
 .text {
 	font-family: arkhamtext;
 	color: white;
-	font-size: 25vh;
+	font-size: 23vh;
 	white-space: pre;
 }
 
 .k {
 	font-family: arkhamicon;
 	color: #990000;
-	font-size: 30vh;
+	font-size: 28vh;
 }
 
 .l {
 	font-family: arkhamicon;
 	color: #33cccc;
-	font-size: 30vh;
+	font-size: 28vh;
 }
 
 .m {
 	font-family: arkhamicon;
 	color: #006600;
-	font-size: 30vh;
+	font-size: 28vh;
 }
 
 .n {
 	font-family: arkhamicon;
 	color: #999966;
-	font-size: 30vh;
+	font-size: 28vh;
 }
 
 .o {
 	font-family: arkhamicon;
 	color: #66ffff;
-	font-size: 30vh;
+	font-size: 28vh;
 }
 
 .q {
 	font-family: arkhamicon;
 	color: #669999;
-	font-size: 30vh;
+	font-size: 28vh;
 }

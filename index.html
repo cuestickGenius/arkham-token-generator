@@ -10,21 +10,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
-  <body  style="background-color: #000800;">
-      <div class="row">
+  <body>
+      <div class="row" style="margin-right: 0px; margin-left: 0px;">
         <div class="title">Arkham Horror Chaos Token Generator</div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-3"></div>
+      <div class="row" style="margin-right: 0px; margin-left: 0px;">
+        <div class="col-sm-2">
 
-        <div class="col-sm-6">
+        </div>
+
+        <div class="col-sm-8">
           <div class="background">
 
             <div class="stub"></div>
             <div class="stub"></div>
 
-            <div class="cointainer" style="filter: contrast(300%) brightness(10%);" id="cointainer" onclick="this.style.animation = 'slit-in-horizontal 1s ease-in both'; generateToken();" onmouseup="this.removeAttribute('style');">
+            <div class="cointainer" style="filter: contrast(300%) brightness(10%);" id="cointainer" onclick="generateToken();">
               <img class="backgroundImg" src="src/sign.png">
               <div class="centered">
                 <div id="token"></div>
@@ -47,10 +49,14 @@
               <br>
             </div>
 
+            <div class="stub"></div>
+
+            <div id="history" class="history"></div>
+
           </div>
         </div>
 
-        <div class="col-sm-3"></div>
+        <div class="col-sm-2"></div>
 
       </div>
   </body>
